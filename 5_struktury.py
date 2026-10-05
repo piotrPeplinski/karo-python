@@ -20,5 +20,35 @@ credentials = {'username': 'Piotr','password': 'Hello123', 1.2: 'Hello'}
 
 #print(credentials.items())
 
-for key, value in credentials.items():
-    print(f'klucz: {key}, value: {value}')
+# for key, value in credentials.items():
+#     print(f'klucz: {key}, value: {value}')
+
+#ustalic separator
+# separator = ','
+# all_numbers = input('Podaj liczby (rozdziel przecinkiem): ')
+
+# numbers = [int(number) for number in all_numbers.split(separator)]
+# print(numbers)
+# numbers = all_numbers.split(separator)
+
+
+
+# even_numbers = [
+#     number # co jest elementem listy
+#     for number in range(21) #źródło - petla for (wymagane)
+#     if number % 2 == 0 # warunek - if (opcjonalny)
+# ]
+
+
+# even_numbers = [number for number in range(21) if number % 2 == 0]
+# print(even_numbers)
+#wyrazenia listy, slownika, zbioru
+#generatory (wyrazenie tupli)
+#list comprehension, dict comp...
+
+#zbiory
+# a = {1,2,3,4,4,4,5,5,5}
+# b = {3,4,5,6}
+# print(a)
+# result = a | b
+# print(result)
