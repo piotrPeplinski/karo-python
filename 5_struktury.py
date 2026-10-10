@@ -52,3 +52,31 @@ credentials = {'username': 'Piotr','password': 'Hello123', 1.2: 'Hello'}
 # print(a)
 # result = a | b
 # print(result)
+
+# new_set = {
+#     number
+#     for number in range(10)
+# }
+
+# print(type(new_set))
+# print(new_set)
+
+# numbers = [number for number in range(1,11)]
+
+# square = {
+#     number: number**2
+#     for number in numbers
+# }
+
+# print(type(square))
+# print(square)
+
+# GENERATOR - NIE WYRAŻENIE TUPLI !!!!
+numbers = (
+    number
+    for number in range(1,11)
+)
+
+print(next(numbers))
+print(next(numbers))
+print(next(numbers))
