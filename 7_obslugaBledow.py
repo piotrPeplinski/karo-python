@@ -9,5 +9,12 @@ try:
 except ValueError:
     print('Podałeś złą wartość')
 else:
-    result = a / b
-    print(result)
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        print('Dzielnik nie moze byc rowny 0')
+    else:
+        print(result)
+    # finally:
+    #     print('To zawsze sie wykona')
+    print('To zawsze sie wykona')
