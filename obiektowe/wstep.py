@@ -10,7 +10,10 @@ car2 = {
     'model': 'Uno',
     'mileage': 80000,
 }
-
+#metoda = funkcja w klasie
+#dunder metody
+#dunder = double underscore / magic methods, wywoluja sie same w okreslonych sytuacjach
+#self = instancja (obiekt)
 class Car:
     def __init__(self, marka, wydanie, mileage): #konstruktor
         print('Uruchumiono __init__')
