@@ -14,6 +14,8 @@ car2 = {
 #dunder metody
 #dunder = double underscore / magic methods, wywoluja sie same w okreslonych sytuacjach
 #self = instancja (obiekt)
+
+
 class Car:
     def __init__(self, marka, wydanie, mileage): #konstruktor
         print('Uruchumiono __init__')
@@ -25,7 +27,20 @@ class Car:
             self.is_new = False
         else:
             self.is_new = True
+        self.mileage = mileage
 
-car3 = Car('Toyota', 'Corolla')
+    def print_info(self):
+        print(f"""Brand: {self.brand}\nModel: {self.model}\nState: {'New' if self.is_new else 'Used'}""")
 
-print(car3.brand)
+    def drive(self, trip_distance):
+        self.mileage += trip_distance
+
+
+    
+
+car3 = Car('Toyota', 'Corolla', 10000)
+car4 = Car('Audi', 'A4', 3000)
+
+car3.print_info()
+car4.print_info()
+car4.drive(4000)
